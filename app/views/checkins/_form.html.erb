@@ -1,0 +1,57 @@
+<%= form_for(@checkin) do |f| %>
+  <% if @checkin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@checkin.errors.count, "error") %> prohibited this checkin from being saved:</h2>
+
+      <ul>
+      <% @checkin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :checkin_id %><br>
+    <%= f.number_field :checkin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br>
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :rating_score %><br>
+    <%= f.text_field :rating_score %>
+  </div>
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.number_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :bid %><br>
+    <%= f.number_field :bid %>
+  </div>
+  <div class="field">
+    <%= f.label :brewery_id %><br>
+    <%= f.number_field :brewery_id %>
+  </div>
+  <div class="field">
+    <%= f.label :venue_city %><br>
+    <%= f.text_field :venue_city %>
+  </div>
+  <div class="field">
+    <%= f.label :venue_state %><br>
+    <%= f.text_field :venue_state %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br>
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :lng %><br>
+    <%= f.text_field :lng %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

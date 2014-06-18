@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bid: 1
+  beer_name: MyString
+  beer_abv: 1.5
+  beer_description: MyString
+  beer_style: MyString
+  is_in_production: false
+  rating_count: 1
+  rating_score: 1.5
+  brewery_id: 1
+
+two:
+  bid: 1
+  beer_name: MyString
+  beer_abv: 1.5
+  beer_description: MyString
+  beer_style: MyString
+  is_in_production: false
+  rating_count: 1
+  rating_score: 1.5
+  brewery_id: 1

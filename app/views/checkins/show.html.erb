@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Checkin:</strong>
+  <%= @checkin.checkin_id %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @checkin.created_at %>
+</p>
+
+<p>
+  <strong>Rating score:</strong>
+  <%= @checkin.rating_score %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @checkin.uid %>
+</p>
+
+<p>
+  <strong>Bid:</strong>
+  <%= @checkin.bid %>
+</p>
+
+<p>
+  <strong>Brewery:</strong>
+  <%= @checkin.brewery_id %>
+</p>
+
+<p>
+  <strong>Venue city:</strong>
+  <%= @checkin.venue_city %>
+</p>
+
+<p>
+  <strong>Venue state:</strong>
+  <%= @checkin.venue_state %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @checkin.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @checkin.lng %>
+</p>
+
+<%= link_to 'Edit', edit_checkin_path(@checkin) %> |
+<%= link_to 'Back', checkins_path %>

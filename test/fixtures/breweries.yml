@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brewery_id: 1
+  brewery_name: MyString
+  brewery_city: MyString
+  brewery_state: MyString
+  lat: MyString
+  lng: MyString
+
+two:
+  brewery_id: 1
+  brewery_name: MyString
+  brewery_city: MyString
+  brewery_state: MyString
+  lat: MyString
+  lng: MyString
